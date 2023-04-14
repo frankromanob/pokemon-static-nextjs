@@ -50,7 +50,7 @@ export const Navbar = () => {
         </div>
       </div>
       <div>
-        <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <div style={{ display: 'flex', flexDirection: 'row',marginLeft:10, marginBottom:5 }}>
           <nav className={styles['menu-container']}>
             {
               menuItems.map((menuItem) =>

@@ -27,9 +27,7 @@ export default function HomePage(props: props) {
 
 export const getStaticProps: GetStaticProps = async (context) => {
 
-  const { data } = await pokeApi.get<PokemonListResp>('/pokemon?limit=151')
-  console.log(data.results)
-
+  const { data } = await pokeApi.get<PokemonListResp>('/pokemon?limit=649')
 
   const pokemons: SmallPokemon[] =
     data.results.map(
@@ -41,8 +39,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       })
     );
 
-  console.log(pokemons)
-  //https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/63.svg
+
 
   return {
     props: {
@@ -50,11 +47,3 @@ export const getStaticProps: GetStaticProps = async (context) => {
     }
   }
 }
-
-// HomePage.getLayout = function getLayout( page : JSX.Element ){
-//   return(
-//       <Layout>
-//               { page }
-//       </Layout>
-//   )
-// }
