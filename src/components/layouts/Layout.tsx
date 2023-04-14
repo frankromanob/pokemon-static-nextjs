@@ -23,11 +23,11 @@ export const Layout = ({ children, title }: PropsWithChildren<LosProps>) => {
 
         <meta property="og:title" content={`Informacion sobre el pokemon ${title}`} />
         <meta property="og:description" content="Catalogo de Pokemon - Proyecto del curso de NextJs de Fernando Herrera en DevTalles" />
-        <meta property="og:image" content={`${origin}/img/banner.png`} />
+        <meta property="og:image" content='https://pokemon-static-nextjs-theta.vercel.app/img/banner.png' />
 
         <meta name="og:description" content="Catalogo de Pokemon - Proyecto del curso de NextJs de Fernando Herrera en DevTalles" />
         <meta name="og:title" content={`Informacion sobre el pokemon ${title}`} />
-        <meta name="og:image" content={`${origin}/img/banner.png`} />
+        <meta name="og:image" content='https://pokemon-static-nextjs-theta.vercel.app/img/banner.png' />
 
       </Head>
 
